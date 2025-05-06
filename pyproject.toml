@@ -1,7 +1,7 @@
 [project]
-name = "keyfort"
+name = "cardetection"
 version = "0.1.0"
-description = "KeyFort is a secure, centralized solution for managing and storing sensitive data such as API keys, credentials, tokens, and other secrets."
+description = "CarDetection Inference Service"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -14,6 +14,11 @@ dependencies = [
     "dunamai==1.23.0",
     "pydantic>=2.11.3",
 ]
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"

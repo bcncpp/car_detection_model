@@ -3,14 +3,11 @@
 A lightweight FastAPI-based server that loads a PyTorch CNN model for car detection.
 
 ## Features
-
 - Custom CNN for car detection
 - REST API for prediction
 - Accepts NumPy array input as nested lists
 - Returns model inference results
-
 ---
-
 ## Requirements
 
 ```bash
