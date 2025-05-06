@@ -4,8 +4,6 @@ from models import CarDetection
 from pydantic import BaseModel
 
 app = FastAPI()
-
-
 @app.on_event("startup")
 async def load_model():
     app.state.model = CarDetection()

@@ -1,0 +1,19 @@
+[project]
+name = "keyfort"
+version = "0.1.0"
+description = "KeyFort is a secure, centralized solution for managing and storing sensitive data such as API keys, credentials, tokens, and other secrets."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]==0.115.6",
+    "fastapi-versioning>=0.10.0",
+    "coverage>=7.6.10",
+    "pytest>=8.3.4",
+    "ruff>=0.8.5",
+    "msgpack>=1.1.0",
+    "dunamai==1.23.0",
+    "pydantic>=2.11.3",
+]
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
